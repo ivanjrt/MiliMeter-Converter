@@ -1,0 +1,80 @@
+﻿<Window x:Class="MillimetersConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Millimeters Converter"
+        Height="350"
+        Width="550"
+        WindowStartupLocation="CenterScreen"
+        Background="#1E1E1E"
+        FontFamily="Arial Rounded MT Bold"
+        ResizeMode="NoResize">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+            <TextBlock Text="Enter Millimeters:"
+                       Foreground="#FFFFFF"
+                       FontSize="16"
+                       Margin="0 0 0 10"
+                       FontFamily="Arial Rounded MT Bold"/>
+
+            <TextBox x:Name="mmInput"
+                     Width="200"
+                     FontSize="16"
+                     Background="#333333"
+                     Foreground="#FFFFFF"
+                     BorderBrush="#FF6600"
+                     BorderThickness="2"
+                     Padding="5"
+                     FontFamily="Arial Rounded MT Bold"/>
+
+            <Button Content="Convert to Centimeters"
+                    Click="ConvertToCentimeters_Click"
+                    Margin="0 10"
+                    Padding="10 5"
+                    Background="#FF6600"
+                    Foreground="#FFFFFF"
+                    FontSize="14"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    FontFamily="Arial Rounded MT Bold"/>
+
+            <TextBlock x:Name="cmResult"
+                       FontWeight="Bold"
+                       Foreground="#FFFFFF"
+                       FontSize="16"
+                       Margin="0 0 0 10"
+                       FontFamily="Unispace"/>
+
+            <Button Content="Convert to Inches"
+                    Click="ConvertToInches_Click"
+                    Margin="0 10"
+                    Padding="10 5"
+                    Background="#FF6600"
+                    Foreground="#FFFFFF"
+                    FontSize="14"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    FontFamily="Arial Rounded MT Bold"/>
+
+            <TextBlock x:Name="inchesResult"
+                       FontWeight="Bold"
+                       Foreground="#FFFFFF"
+                       FontSize="16"
+                       FontFamily="Unispace"/>
+
+            <Button Content="Reset All"
+                    Click="ResetAll_Click"
+                    Margin="0 20"
+                    Padding="10 5"
+                    Background="#FF6600"
+                    Foreground="#FFFFFF"
+                    FontSize="14"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    FontFamily="Arial Rounded MT Bold"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
