@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Input;
 
 
 namespace MillimetersConverter
@@ -51,6 +52,20 @@ namespace MillimetersConverter
             mmInput.Text = null;
             cmResult.Text = null;
             inchesResult.Text = null;
+        }
+        private void mmInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                // Perform the desired action here, such as calling the conversion method
+                ConvertToCentimeters_Click(sender, e);
+                ConvertToInches_Click(sender, e);
+            }
+        }
+
+        private void mmInput_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+
         }
     }
 }
