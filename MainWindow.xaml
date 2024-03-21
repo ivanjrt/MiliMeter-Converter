@@ -77,5 +77,7 @@
                     FontFamily="Arial Rounded MT Bold"/>
 
         </StackPanel>
+        <Label Content="v1.2" HorizontalAlignment="Left" Margin="483,10,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" Background="{x:Null}" Foreground="#FFE4E0E0"/>
+        <Image Margin="446,238,0,0" Source="/openSource.png" Stretch="Fill" Opacity="0.5"/>
     </Grid>
 </Window>
